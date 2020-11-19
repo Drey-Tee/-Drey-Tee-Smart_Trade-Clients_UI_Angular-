@@ -9,7 +9,7 @@
           class="font-semibold text-lg"
           [ngClass]="color === 'light' ? 'text-gray-800' : 'text-white'"
         >
-          Card Tables
+          Registered Portfolios
         </h3>
       </div>
     </div>
@@ -27,7 +27,7 @@
                 : 'bg-red-800 text-red-300 border-red-700'
             "
           >
-            Project
+            Portfolio
           </th>
           <th
             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
@@ -37,7 +37,7 @@
                 : 'bg-red-800 text-red-300 border-red-700'
             "
           >
-            Budget
+            Briefing
           </th>
           <th
             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
@@ -47,9 +47,9 @@
                 : 'bg-red-800 text-red-300 border-red-700'
             "
           >
-            Status
+            Action
           </th>
-          <th
+           <th
             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
             [ngClass]="
               color === 'light'
@@ -57,9 +57,9 @@
                 : 'bg-red-800 text-red-300 border-red-700'
             "
           >
-            Users
+            View
           </th>
-          <th
+          <!-- <th
             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
             [ngClass]="
               color === 'light'
@@ -68,7 +68,7 @@
             "
           >
             Completion
-          </th>
+          </th> -->
           <th
             class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
             [ngClass]="
@@ -76,7 +76,7 @@
                 ? 'bg-gray-100 text-gray-600 border-gray-200'
                 : 'bg-red-800 text-red-300 border-red-700'
             "
-          ></th>
+          ></th> 
         </tr>
       </thead>
       <tbody>
@@ -104,38 +104,28 @@
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
-            <i class="fas fa-circle text-orange-500 mr-2"></i> pending
+            <!-- <i class="fas fa-circle text-orange-500 mr-2"></i> pending -->
+            <button class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+            
           </td>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
             <div class="flex">
-              <img
-                src="assets/img/team-1-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow"
-              />
-              <img
-                src="assets/img/team-2-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-3-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-4-470x470.png"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
+              <button  class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i class="fas fa-eye"></i></button>
+              
             </div>
           </td>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
-            <div class="flex items-center">
+            <!-- <div class="flex items-center">
               <span class="mr-2">60%</span>
               <div class="relative w-full">
                 <div
@@ -147,13 +137,13 @@
                   ></div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </td>
-          <td
+          <!-- <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right"
           >
             <app-table-dropdown></app-table-dropdown>
-          </td>
+          </td> -->
         </tr>
         <tr>
           <th
@@ -176,59 +166,27 @@
           >
             $1,800 USD
           </td>
+
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
-            <i class="fas fa-circle text-green-500 mr-2"></i>
-            completed
+            <!-- <i class="fas fa-circle text-orange-500 mr-2"></i> pending -->
+            <button class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+            
           </td>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
             <div class="flex">
-              <img
-                src="assets/img/team-1-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow"
-              />
-              <img
-                src="assets/img/team-2-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-3-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-4-470x470.png"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
+              <button  class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i class="fas fa-eye"></i></button>
+              
             </div>
-          </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
-          >
-            <div class="flex items-center">
-              <span class="mr-2">100%</span>
-              <div class="relative w-full">
-                <div
-                  class="overflow-hidden h-2 text-xs flex rounded bg-green-200"
-                >
-                  <div
-                    style="width: 100%;"
-                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right"
-          >
-            <app-table-dropdown></app-table-dropdown>
           </td>
         </tr>
         <tr>
@@ -252,59 +210,29 @@
           >
             $3,150 USD
           </td>
+
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
-            <i class="fas fa-circle text-red-500 mr-2"></i> delayed
+            <!-- <i class="fas fa-circle text-orange-500 mr-2"></i> pending -->
+            <button class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+            
           </td>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
             <div class="flex">
-              <img
-                src="assets/img/team-1-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow"
-              />
-              <img
-                src="assets/img/team-2-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-3-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-4-470x470.png"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
+              <button  class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i class="fas fa-eye"></i></button>
+              
             </div>
           </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
-          >
-            <div class="flex items-center">
-              <span class="mr-2">73%</span>
-              <div class="relative w-full">
-                <div
-                  class="overflow-hidden h-2 text-xs flex rounded bg-red-200"
-                >
-                  <div
-                    style="width: 73%;"
-                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right"
-          >
-            <app-table-dropdown></app-table-dropdown>
-          </td>
+         
         </tr>
         <tr>
           <th
@@ -327,59 +255,29 @@
           >
             $4,400 USD
           </td>
+
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
-            <i class="fas fa-circle text-teal-500 mr-2"></i> on schedule
+            <!-- <i class="fas fa-circle text-orange-500 mr-2"></i> pending -->
+            <button class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+            
           </td>
           <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
             <div class="flex">
-              <img
-                src="assets/img/team-1-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow"
-              />
-              <img
-                src="assets/img/team-2-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-3-800x800.jpg"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
-              <img
-                src="assets/img/team-4-470x470.png"
-                alt="..."
-                class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4"
-              />
+              <button  class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i class="fas fa-eye"></i></button>
+              
             </div>
           </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
-          >
-            <div class="flex items-center">
-              <span class="mr-2">90%</span>
-              <div class="relative w-full">
-                <div
-                  class="overflow-hidden h-2 text-xs flex rounded bg-teal-200"
-                >
-                  <div
-                    style="width: 90%;"
-                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-500"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right"
-          >
-            <app-table-dropdown></app-table-dropdown>
-          </td>
+         
         </tr>
         <tr>
           <th
@@ -402,7 +300,29 @@
           >
             $2,200 USD
           </td>
+
           <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
+          >
+            <!-- <i class="fas fa-circle text-orange-500 mr-2"></i> pending -->
+            <button class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+            
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
+          >
+            <div class="flex">
+              <button  class="bg-green-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <i class="fas fa-eye"></i></button>
+              
+            </div>
+          </td>
+          <!-- <td
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
           >
             <i class="fas fa-circle text-green-500 mr-2"></i>
@@ -455,7 +375,7 @@
             class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right"
           >
             <app-table-dropdown></app-table-dropdown>
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>
