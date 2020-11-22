@@ -8,4 +8,12 @@ export class LoginComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+ userEmail:string=""
+ userPassword:string=""
+checkLogin(){
+  console.log(`username is ${this.userEmail} and password is ${this.userPassword}`);
+
+}
+
+
 }

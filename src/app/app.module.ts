@@ -4,6 +4,9 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
+//Forms
+import {FormsModule} from '@angular/forms';
+
 // layouts
 import { AdminComponent } from "./layouts/admin/admin.component";
 import { AuthComponent } from "./layouts/auth/auth.component";
@@ -95,7 +98,7 @@ import { ReportComponent } from './components/report/report.component';
     TradeHistoryComponent,
     ReportComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
