@@ -1,9 +1,14 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ReportComponent } from './components/report/report.component';
+import { TradeHistoryComponent } from './components/trade-history/trade-history.component';
+import { TradesComponent } from './components/trades/trades.component';
 
 // layouts
 import { AdminComponent } from "./layouts/admin/admin.component";
 import { AuthComponent } from "./layouts/auth/auth.component";
+// import { PortfolioComponent } from './portfolio/portfolio.component';
 
 // admin views
 import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
@@ -30,7 +35,12 @@ const routes: Routes = [
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
+      { path: "portfolio", component: PortfolioComponent },
+      { path: "report", component: ReportComponent },
+      { path: "trade-history", component: TradeHistoryComponent },
+      { path: "trades", component: TradesComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
+      { path: "**", redirectTo: "dashboard", pathMatch: "full" },
     ],
   },
   // auth views
@@ -46,8 +56,10 @@ const routes: Routes = [
   // no layout views
   { path: "profile", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
-  { path: "", component: IndexComponent },
-  { path: "**", redirectTo: "", pathMatch: "full" },
+  // { path: "", component: IndexComponent },
+  { path: "dashboard", component: DashboardComponent },
+  { path: "**", redirectTo: "admin/dashboard", pathMatch: "full" },
+  { path: "", redirectTo: "", pathMatch: "full" },
 ];
 
 @NgModule({

@@ -47,6 +47,12 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+// import { PortfolioComponent } from './portfolio/portfolio.component';
+
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { TradesComponent } from './components/trades/trades.component';
+import { TradeHistoryComponent } from './components/trade-history/trade-history.component';
+import { ReportComponent } from './components/report/report.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +90,10 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     IndexComponent,
     LandingComponent,
     ProfileComponent,
+    PortfolioComponent,
+    TradesComponent,
+    TradeHistoryComponent,
+    ReportComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
