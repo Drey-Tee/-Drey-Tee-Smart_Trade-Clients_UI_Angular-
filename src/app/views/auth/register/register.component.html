@@ -32,7 +32,7 @@
           <!-- <div class="text-gray-500 text-center mb-3 font-bold">
             <small>Or sign up with credentials</small>
           </div> -->
-          <form>
+          <form #registerForm= "ngForm">
             <div class="relative w-full mb-3">
               <label
                 class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -41,6 +41,9 @@
                 First Name
               </label>
               <input
+                name="firstName"
+                [(ngModel)]="userFirstName"
+                #firstNameField="ngModel"
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 placeholder="First Name"
@@ -56,6 +59,9 @@
               Last Name
             </label>
             <input
+              name="lastName"
+              [(ngModel)]="userLastName"
+              #LastNameField="ngModel"
               type="text"
               class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
               placeholder="Last Name"
@@ -71,6 +77,7 @@
               Other Name
             </label>
             <input
+              [(ngModel)]="userOtherName"
               type="text"
               class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
               placeholder="Other Name"
@@ -87,6 +94,9 @@
                 Email
               </label>
               <input
+                #firstNameField="ngModel"
+                name="email"
+                [(ngModel)]="userEmail"
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 placeholder="Email"
@@ -101,15 +111,17 @@
                 Password
               </label>
               <input
+                [(ngModel)]="userPassword"
                 type="password"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 placeholder="Password"
               />
             </div>
-
+<!-- 
             <div>
               <label class="inline-flex items-center cursor-pointer">
                 <input
+                 [(ngModel)]="userOtherName"
                   id="customCheckLogin"
                   type="checkbox"
                   class="form-checkbox text-gray-800 ml-1 w-5 h-5 ease-linear transition-all duration-150"
@@ -121,12 +133,13 @@
                   </a>
                 </span>
               </label>
-            </div>
+            </div> -->
 
             <div class="text-center mt-6">
               <button
+                [disabled]="registerForm.invalid"
                 class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                type="button"
+                type="submit"
               >
                 Create Account
               </button>

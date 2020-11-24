@@ -59,6 +59,7 @@ import { ReportComponent } from './components/report/report.component';
 import { CreatePortfolioComponent } from './components/create-portfolio/create-portfolio.component';
 import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { StocksComponent } from './components/stocks/stocks.component';
+import { CreateStockComponent } from './components/create-stock/create-stock.component';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import { StocksComponent } from './components/stocks/stocks.component';
     CreatePortfolioComponent,
     CreateOrderComponent,
     StocksComponent,
+    CreateStockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],

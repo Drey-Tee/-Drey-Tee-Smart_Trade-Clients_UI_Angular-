@@ -27,6 +27,7 @@ import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 import { StocksComponent } from './components/stocks/stocks.component';
+import { CreateStockComponent } from './components/create-stock/create-stock.component';
 
 const routes: Routes = [
   // admin views
@@ -45,6 +46,8 @@ const routes: Routes = [
       { path: "create-portfolio", component: CreatePortfolioComponent},
       { path: "create-order", component: CreateOrderComponent},
       { path: "stocks", component: StocksComponent },
+      { path: "create-stocks", component: CreateStockComponent },
+
 
       // { path: "", redirectTo: "dashboard", pathMatch: "full" },
       // { path: "**", redirectTo: "dashboard", pathMatch: "full" },
