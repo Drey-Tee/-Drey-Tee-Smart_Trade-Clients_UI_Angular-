@@ -7,11 +7,13 @@
                 </h3>
             </div>
             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                <button
+                <a routerLink = "/admin/create-portfolio" href="#">
+                <button 
                     class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button">
-                    new portfolio &nbsp;<i class="fas fa-plus"></i>
+                    add  new portfolio &nbsp;<i class="fas fa-plus"></i>
                 </button>
+                </a> 
             </div>
         </div>
     </div>
@@ -36,16 +38,20 @@
                         class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left">
                         VIEW
                     </th>
+                    <th
+                    class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left">
+                        DATE
+                    </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th
                         class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left">
-                        /argon/
+                        IBM Portfolio
                     </th>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
-                        4,569
+                        This portfolio consists of 3 major stocks with varying prices.
                     </td>
                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                     <button
@@ -66,6 +72,9 @@
                         type="button">
                         <i class="fas fa-eye"></i>
                     </button>
+                    </td>
+                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        26-10-20
                     </td>
                 </tr>
               
