@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
  userEmail:string=""
  userPassword:string=""
 checkLogin(){
-  console.log(`username is ${this.userEmail} and password is ${this.userPassword}`);
+  console.log(`email is ${this.userEmail} and password is ${this.userPassword}`);
 
 }
 

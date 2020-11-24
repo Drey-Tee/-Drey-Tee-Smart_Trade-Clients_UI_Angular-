@@ -56,6 +56,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TradesComponent } from './components/trades/trades.component';
 import { TradeHistoryComponent } from './components/trade-history/trade-history.component';
 import { ReportComponent } from './components/report/report.component';
+import { CreatePortfolioComponent } from './components/create-portfolio/create-portfolio.component';
+import { CreateOrderComponent } from './components/create-order/create-order.component';
+import { StocksComponent } from './components/stocks/stocks.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +100,9 @@ import { ReportComponent } from './components/report/report.component';
     TradesComponent,
     TradeHistoryComponent,
     ReportComponent,
+    CreatePortfolioComponent,
+    CreateOrderComponent,
+    StocksComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],

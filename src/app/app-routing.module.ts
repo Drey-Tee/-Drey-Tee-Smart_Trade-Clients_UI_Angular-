@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { CreatePortfolioComponent } from './components/create-portfolio/create-portfolio.component';
+import { CreateOrderComponent } from './components/create-order/create-order.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReportComponent } from './components/report/report.component';
 import { TradeHistoryComponent } from './components/trade-history/trade-history.component';
@@ -14,7 +16,7 @@ import { AuthComponent } from "./layouts/auth/auth.component";
 import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
 import { MapsComponent } from "./views/admin/maps/maps.component";
 import { SettingsComponent } from "./views/admin/settings/settings.component";
-import { TablesComponent } from "./views/admin/tables/tables.component";
+import { TablesComponent } from "./views/admin/tables/tables.component"; 
 
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
@@ -24,6 +26,7 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
+import { StocksComponent } from './components/stocks/stocks.component';
 
 const routes: Routes = [
   // admin views
@@ -39,8 +42,12 @@ const routes: Routes = [
       { path: "report", component: ReportComponent },
       { path: "trade-history", component: TradeHistoryComponent },
       { path: "trades", component: TradesComponent },
-      { path: "", redirectTo: "dashboard", pathMatch: "full" },
-      { path: "**", redirectTo: "dashboard", pathMatch: "full" },
+      { path: "create-portfolio", component: CreatePortfolioComponent},
+      { path: "create-order", component: CreateOrderComponent},
+      { path: "stocks", component: StocksComponent },
+
+      // { path: "", redirectTo: "dashboard", pathMatch: "full" },
+      // { path: "**", redirectTo: "dashboard", pathMatch: "full" },
     ],
   },
   // auth views
